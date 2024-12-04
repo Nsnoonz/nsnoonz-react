@@ -59,14 +59,17 @@ const dataEN: ResumeData = {
         year: '2021 - Present',
         role: 'Full-Stack Web Deveoloper',
         description: [
-          'Analyzed and solved system issues.',
+          'Fix and solve system problems',
           'Developed systems based on assigned tasks and requirements.',
+          'Create Program spec and Unit test',
           'Supported team members.',
-          'Developed systems including download/upload file functionalities via FTP on API Node.js.',
-          'Developed systems for reading files from formats CSV, TXT, and Excel, and storing data in databases.',
-          'Developed systems for sending email and file attachment.',
-          'Developed systems for data transmission between insurance companies.',
-          'Tested systems and documented unit tests',
+          'Learn and Research new technologies to improve company systems.',
+          'Develop systems to upload and download files via FTP using Node.js APIs.',
+          'Develop systems to read CSV, TXT, and Excel files and save the data in a database',
+          'Develop systems to send data via Email or Line',
+          'Develop Webservice between insurance companies.',
+          'Review source code',
+          'Develop systems using .NET C#, RESTful APIs with Node.js, HTML, JavaScript, CSS, and AJAX.',
         ]
       }
     ]
@@ -111,14 +114,15 @@ const dataTH: ResumeData = {
         role: 'Full-Stack Web Deveoloper',
         description: [
           'ตรวจสอบปัญหาและแก้ไขระบบ', 
-          'พัฒนาระบบที่ได้รับมอบหมายภายในระยะเวลาที่กำหนด',
+          'ออกแบบและพัฒนาระบบที่ได้รับมอบหมายตาม พร้อมทั้งจัดทำเอกสาร Program spec และ Unit test',
           'สนับสนุนช่วยเหลือเพื่อนร่วมทีม จัดทั้งเอกสารประกอบการพัฒนาระบบ',
           'ศึกษาและค้นคว้า เทคโนโลยีต่างๆ เพื่อนำมาปรับใช้กับระบบของบริษัท',
           'พัฒนาระบบ ดาวน์โหลด/อัปโหลดไฟล์ผ่าน FTP บน API Node.js',
           'พัฒนาระบบสำหรับอ่านไฟล์จากรูปแบบ CSV, TXT, และ Excel และจัดเก็บข้อมูลในฐานข้อมูล',
-          'พัฒนาระบบสำหรับการส่งอีเมลและแนบไฟล์',
-          'พัฒนาระบบสำหรับการส่งข้อมูลระหว่างบริษัทประกัน',
-          'ทดสอบระบบ พร้อมจัดทำเอกสาร unit test',
+          'พัฒนาระบบสำหรับการส่งข้อมูล ผ่าน Email / Line',
+          'พัฒนาระบบ Webservice สำหรับการส่งข้อมูลระหว่างบริษัทประกัน',
+          'ตรวจสอบ source code ภายในทีม ก่อนนำขึ้น Production',
+          'พัฒนาระบบด้วย .Net C#, RestFull API with Node js , HTML , js, css , ajax'
         ]
       },
     ]
