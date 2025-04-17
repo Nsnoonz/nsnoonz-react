@@ -76,7 +76,7 @@ const About: React.FC = () => {
               <div className=" bg-nsnoonz-blue text-white p-1">
                   <p className={` text-center font-bold ${setPDF}`}>{currentData.profile.title.toUpperCase()}</p>
                 </div>
-                <div className="pt-3">
+                <div className="pt-3 text-sm ">
                   <p className="flex flex-row items-center">{ stLang === 'th' ? 'ชื่อ' : 'Name' } : {currentData.profile.detail.name}</p>
                   <p className="flex flex-row items-center">{ stLang === 'th' ? 'เพศ' : 'Gender' } : {currentData.profile.detail.gender} </p>
                   <p className="flex flex-row items-center">{ stLang === 'th' ? 'อายุ' : 'Age' } : {new Date().getFullYear() - new Date('1998-08-16').getFullYear()}</p>
@@ -84,20 +84,20 @@ const About: React.FC = () => {
                 </div>
               </div>
 
-              <div className="max-w-sm mx-5 mt-16 ">
+              <div className="max-w-sm mx-5 mt-8 ">
               <div className=" bg-nsnoonz-blue text-white p-1">
                 <p className={` text-center font-bold ${setPDF}`}>{ stLang === 'th' ? 'ทักษะ' : 'SKILLS' } </p>
                 </div>
-                <div className="pt-3">
+                <div className="pt-3 text-sm  ">
                   <p className="flex flex-row items-center break-words" >Node.js, React (beginner), Tailwind (beginner), Typescript (beginner), ASP.Net, asp classic, PHP, MSSQL, MySQL, HTML, CSS, JavaScript, Jquery, Ajax, Bootstrap</p>
                 </div>
               </div>
 
-              <div className="max-w-sm mx-5 mt-16 ">
+              <div className="max-w-sm mx-5 mt-8 ">
                 <div className=" bg-nsnoonz-blue text-white p-1">
                   <p className={` text-center font-bold ${setPDF}`}>{currentData.contact.title.toUpperCase()}</p>
                 </div>
-                <div className="pt-3">
+                <div className="pt-3 text-sm ">
                   {currentData.contact.data.map((item, index) => (
                     <div key={index} className="flex items-center  mt-2 ">
                       <div className="flex justify-center items-center w-9 h-9 rounded-full p-2 mr-2 bg-nsnoonz-blue text-white ">
@@ -115,43 +115,54 @@ const About: React.FC = () => {
                 </div>
               </div>
 
-            </div>
-            <div className="border-l-2 border-nsnoonz-blue">
-              <div className="max-w-sm mx-5">
-                  <div className=" bg-nsnoonz-blue text-white p-1 ">
-                    <p className={` text-center font-bold ${setPDF}`}>{currentData.experience.title.toUpperCase()}</p>
-                  </div>
-                  <div className="pt-3">
-                  {currentData.experience.data.map((item, index) => (
-                    <>
-                    <div key={index} className="font-bold">
-                      <p className="flex flex-row items-center">{item.company}</p>
-                      <p className="flex flex-row items-center">{item.location}</p>
-                      <p className="flex flex-row items-center">{item.year}</p>
-                      <p className="flex flex-row items-center underline underline-offset-1">{item.role}</p>
-                    </div>
-                    <div className="mt-2 pl-4 text-sm">
-                      {item.description.map((item2, index2) => (
-                        <li key={index2} className="">{item2}</li>
-                      ))}
-                    </div>
-                    </>
-                  ))}
-                  </div>
-              </div>
-              <div className="max-w-sm mx-5 mt-12">
+              <div className="max-w-sm mx-5 mt-8">
                 <div className=" bg-nsnoonz-blue text-white p-1">
                   <p className={` text-center font-bold ${setPDF}`}>{currentData.education.title.toUpperCase()}</p>
                 </div>
-                <div className="pt-3">
+                <div className="pt-3 text-sm">
                   {currentData.education.data.map((item, index) => (
-                    <div key={index}  className={`text-sm ${index > 0 ? `mt-2` : ''}`}>
+                    <div key={index}  className={`${index > 0 ? `mt-2` : ''}`}>
                     <p className="flex flex-row items-center  font-bold"> {item.year} </p>
                     <p className="flex flex-row items-center" style={{ whiteSpace: 'pre-wrap' }}>&nbsp;{item.detail} </p>
                     <p className="flex flex-row items-center">&nbsp;{item.location} </p>
                     </div>
                   ))}
                 </div>
+              </div>
+
+            </div>
+            <div className="border-l-2 border-nsnoonz-blue">
+              <div className="max-w-sm mx-5">
+                  <div className=" bg-nsnoonz-blue text-white p-1 ">
+                    <p className={` text-center font-bold ${setPDF}`}>{currentData.experience.title.toUpperCase()}</p>
+                  </div>
+                  <div className="pt-3" style={{ fontSize: "14px" }}>
+                  {currentData.experience.data.map((item, index) => (
+                    <>
+                    <div key={index} className="font-bold">
+                      <p className="flex flex-row items-center mt-1" style={{ fontSize: "16px" }}>{item.company}</p>
+                      <p className="flex flex-row items-center"  >{item.location}</p>
+                      <p className="flex flex-row items-center"  >{item.year}</p>
+                      <p className="flex flex-row items-center underline underline-offset-1">{item.role}</p>
+                    </div>
+                    <div className="mt-2 pl-4">
+                      {/* {item.description.map((item2, index2) => (
+                        <li key={index2} className=""><span>{item2}</span></li>
+                      ))} */}
+                      {item.description.map((item2, index2) => (
+                        <li key={index2} className="">
+                          {item2.split('\n').map((line, i) => (
+                            <span key={i}>
+                              {line}
+                              {i !== item2.split('\n').length - 1 && <br />}
+                            </span>
+                          ))}
+                        </li>
+                      ))}
+                    </div>
+                    </>
+                  ))}
+                  </div>
               </div>
             </div>
           </div>

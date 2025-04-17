@@ -55,8 +55,8 @@ const dataEN: ResumeData = {
     data: [
       {
         company: 'SILKSPAN Public Company Limited',
-        location: 'SSP Tower(Ekkamai) Bangkok - Thailand',
-        year: '2021 - Present',
+        location: 'SSP Tower(Ekkamai) Bangkok',
+        year: 'Jun 2021 - Jan 2025',
         role: 'Full-Stack Web Deveoloper',
         description: [
           'Fix and solve system problems',
@@ -70,6 +70,24 @@ const dataEN: ResumeData = {
           'Develop Webservice between insurance companies.',
           'Review source code',
           'Develop systems using .NET C#, RESTful APIs with Node.js, HTML, JavaScript, CSS, and AJAX.',
+        ]
+      },
+      {
+        company: 'PTT Digital Solutions Co., Ltd.',
+        location: 'Shinnawatra Tower 3 (Chatuchak) Bangkok ',
+        year: 'February 2025 - Present',
+        role: 'Mid-Level Developer',
+        description: [
+          `Development (Node.js / TypeScript)
+           - Designed and implemented database structures using PostgreSQL and TypeORM
+           - Developed functions to generate data
+           - Created API documentation using Postman
+           - Unit tests using Jest`,
+          `Enhancements (.NET C#)
+           - Fix and solve system problems 
+           - Developed services for API integration
+           - Improved Function SQL-Store / Function SQL-View (MS SQL)
+           - Created Documented system workflows`,
         ]
       }
     ]
@@ -86,7 +104,7 @@ const dataEN: ResumeData = {
   education: {
     title : 'education',
     data:[
-      { year: '2019 - 2021' , detail: 'Bachelor of information technology' , location: 'MAHASARAKAM UNIVERSITY' },
+      { year: '2019-2021' , detail: 'Bachelor of information technology' , location: 'MAHASARAKAM UNIVERSITY' },
       { year: '2017-2019' , detail: 'Diploma major information technology' , location: 'KALASIN TECHNICAL COLLECT' },
       { year: '2010-2016' , detail: 'HIGH SCHOOL' , location: 'Thammasat Khlongluang Wittayakom School' },
     ]
@@ -110,20 +128,41 @@ const dataTH: ResumeData = {
       {
         company: 'บริษัท ซิลค์สแปน จำกัด (มหาชน)',
         location: 'อาคาร เอส เอส พี (เอกมัย) กรุงเทพฯ 10110',
-        year: '2021 - ปัจจุบัน',
+        year: 'มิถุนายน 2021 - มกราคม 2025',
         role: 'Full-Stack Web Deveoloper',
         description: [
           'ตรวจสอบปัญหาและแก้ไขระบบ', 
-          'ออกแบบและพัฒนาระบบที่ได้รับมอบหมายตาม พร้อมทั้งจัดทำเอกสาร Program spec และ Unit test',
-          'สนับสนุนช่วยเหลือเพื่อนร่วมทีม จัดทั้งเอกสารประกอบการพัฒนาระบบ',
+          'ออกแบบและพัฒนาระบบที่ได้รับมอบหมายตาม\nพร้อมทั้งจัดทำเอกสาร Program spec และ Unit test',
+          'สนับสนุนเพื่อนร่วมทีม จัดทำเอกสารประกอบการพัฒนาระบบ',
           'ศึกษาและค้นคว้า เทคโนโลยีต่างๆ เพื่อนำมาปรับใช้กับระบบของบริษัท',
           'พัฒนาระบบ ดาวน์โหลด/อัปโหลดไฟล์ผ่าน FTP บน API Node.js',
-          'พัฒนาระบบสำหรับอ่านไฟล์จากรูปแบบ CSV, TXT, และ Excel และจัดเก็บข้อมูลในฐานข้อมูล',
+          'พัฒนาระบบสำหรับอ่านไฟล์จากรูปแบบ CSV, TXT, และ Excel\nและจัดเก็บข้อมูลในฐานข้อมูล',
           'พัฒนาระบบสำหรับการส่งข้อมูล ผ่าน Email / Line',
           'พัฒนาระบบ Webservice สำหรับการส่งข้อมูลระหว่างบริษัทประกัน',
           'ตรวจสอบ source code ภายในทีม ก่อนนำขึ้น Production',
           'พัฒนาระบบด้วย .Net C#, RestFull API with Node js , HTML , js, css , ajax'
         ]
+      },
+      {
+        company: 'บริษัท พีทีที ดิจิตอล โซลูชั่น จํากัด',
+        location: 'อาคารชินวัตรทาวเวอร์ 3 เขตจตุจักร กรุงเทพฯ 10900',
+        year: 'กุมภาพันธ์ 2025 - ปัจจุบัน',
+        role: 'Mid.Developer',
+        description: [
+          `งาน Development (Nodejs/typescript)
+            - ออกแบบฐานข้อมูล (PostgreSQL) เชื่อมต่อแบบ Entity TypeORM
+            - สร้างและออกแบบฟังก์ชั่นสำหรับการ Generate Data
+            - ทำ Document อธิบาย Endpoint API in Postman
+            - Unit Test ด้วย Jest
+          `,
+          `งาน Enhances (.Net C#)
+            - ตรวจสอบปัญหาและแก้ไขระบบ
+            - พัฒนา Service การเชื่อมต่อ API
+            - ปรับปรุง Function SQL-Store / Function SQL-View (MS SQL)
+            - จัดทำเอกสารสรุปการทำงานของระบบ
+          `,
+        ]
+        
       },
     ]
   },
