@@ -69,9 +69,9 @@ const About: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className=" mt-5 mx-5 ">
-            <div className="grid grid-cols-2 gap-0">
-            <div className="border-r-2 border-nsnoonz-blue">
+          <div className=" mx-5 ">
+            <div className="grid grid-cols-12  gap-0">
+            <div className="border-r-2 col-span-5 border-nsnoonz-blue">
               <div className="max-w-sm mx-5 ">
               <div className=" bg-nsnoonz-blue text-white p-1">
                   <p className={` text-center font-bold ${setPDF}`}>{currentData.profile.title.toUpperCase()}</p>
@@ -131,7 +131,7 @@ const About: React.FC = () => {
               </div>
 
             </div>
-            <div className="border-l-2 border-nsnoonz-blue">
+            <div className="border-l-2 col-span-7 border-nsnoonz-blue">
               <div className="max-w-sm mx-5">
                   <div className=" bg-nsnoonz-blue text-white p-1 ">
                     <p className={` text-center font-bold ${setPDF}`}>{currentData.experience.title.toUpperCase()}</p>
@@ -145,7 +145,7 @@ const About: React.FC = () => {
                       <p className="flex flex-row items-center"  >{item.year}</p>
                       <p className="flex flex-row items-center underline underline-offset-1">{item.role}</p>
                     </div>
-                    <div className="mt-2 pl-4">
+                    <div className="mt-2 pl-4" >
                       {/* {item.description.map((item2, index2) => (
                         <li key={index2} className=""><span>{item2}</span></li>
                       ))} */}

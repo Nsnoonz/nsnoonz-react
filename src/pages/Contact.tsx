@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CanvasCosmix from '../components/items/CanvasCosmix'; 
+import Spinner  from '../components/items/Spinner'; 
 import axios from 'axios';
 import Swal from 'sweetalert2'; 
 type FormData = {
@@ -9,7 +10,7 @@ type FormData = {
 };
 
 const ContactForm: React.FC = () => {
-  
+  const [setLoading, setLoadingState] = useState<boolean>(false);
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -72,6 +73,7 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
     if (validate()) {
       try {
+        setLoadingState(true)
         const authData = { "username": "devNsnoonz", "password": "passNsnoonz" }
         const responseAuth = await axios.post('https://api-nsnoonz.vercel.app/api/authenticate/v1.0/fnGenerateAccessToken', authData);
         if (responseAuth.status === 200) {
@@ -83,21 +85,27 @@ const ContactForm: React.FC = () => {
             }
           });
           if (response.status === 200) {
+            setLoadingState(false)
             Swal.fire({ title: 'Success!',text: `Senmail successfully`, icon: 'success', confirmButtonText: 'OK' });
           } else {
+            setLoadingState(false)
             Swal.fire({ title: 'Error', text: response.data.message, icon: 'error', confirmButtonText: 'OK' });
           }
         } else {
+          setLoadingState(false)
           Swal.fire({ title: 'Error', text: responseAuth.data.message, icon: 'error', confirmButtonText: 'OK' });
         }
       } catch (error: any) {
+        setLoadingState(false)
         Swal.fire({ title: 'Error', text: error.message, icon: 'error', confirmButtonText: 'OK' });
       }
     }
   };
 
   return (
-  <div className="relative min-h-screen flex items-center justify-center bg-black">
+    
+  <div className="relative min-h-screen flex items-center justify-center bg-black" >
+  {setLoading && <Spinner />}
   <CanvasCosmix width={window.innerWidth} height={window.innerHeight} />
   <div className="relative z-10 p-6 container  text-sky-950">
     <form onSubmit={handleSubmit} className="mx-auto max-w-6xl p-6  bg-white bg-opacity-100 shadow-md rounded-md">

@@ -57,14 +57,14 @@ const dataEN: ResumeData = {
         company: 'SILKSPAN Public Company Limited',
         location: 'SSP Tower(Ekkamai) Bangkok',
         year: 'Jun 2021 - Jan 2025',
-        role: 'Full-Stack Web Deveoloper',
+        role: 'Programmer',
         description: [
           'Fix and solve system problems',
           'Developed systems based on assigned tasks and requirements.',
           'Create Program spec and Unit test',
           'Supported team members.',
           'Learn and Research new technologies to improve company systems.',
-          'Develop systems to upload and download files via FTP using Node.js APIs.',
+          'Develop systems to upload and download files FTP ',
           'Develop systems to read CSV, TXT, and Excel files and save the data in a database',
           'Develop systems to send data via Email or Line',
           'Develop Webservice between insurance companies.',
@@ -78,16 +78,19 @@ const dataEN: ResumeData = {
         year: 'February 2025 - Present',
         role: 'Mid-Level Developer',
         description: [
-          `Development (Node.js / TypeScript)
+          `Development
            - Designed and implemented database structures using PostgreSQL and TypeORM
-           - Developed functions to generate data
-           - Created API documentation using Postman
-           - Unit tests using Jest`,
-          `Enhancements (.NET C#)
+           - Improved and developed APIs
+           - Unit tests using Jest
+           - Developed backend systems using Node.js with TypeScript`,
+          `Enhancements
            - Fix and solve system problems 
            - Developed services for API integration
            - Improved Function SQL-Store / Function SQL-View (MS SQL)
-           - Created Documented system workflows`,
+           - Created RDLC Report
+           - Created Documented system workflows
+           - Develop systems using .NET C# (mvc/web form/web api) , mssql
+           `,
         ]
       }
     ]
@@ -129,17 +132,18 @@ const dataTH: ResumeData = {
         company: 'บริษัท ซิลค์สแปน จำกัด (มหาชน)',
         location: 'อาคาร เอส เอส พี (เอกมัย) กรุงเทพฯ 10110',
         year: 'มิถุนายน 2021 - มกราคม 2025',
-        role: 'Full-Stack Web Deveoloper',
+        role: 'Programmer',
         description: [
           'ตรวจสอบปัญหาและแก้ไขระบบ', 
+          'ออกแบบฐานข้อมูล',
           'ออกแบบและพัฒนาระบบที่ได้รับมอบหมายตาม\nพร้อมทั้งจัดทำเอกสาร Program spec และ Unit test',
           'สนับสนุนเพื่อนร่วมทีม จัดทำเอกสารประกอบการพัฒนาระบบ',
           'ศึกษาและค้นคว้า เทคโนโลยีต่างๆ เพื่อนำมาปรับใช้กับระบบของบริษัท',
-          'พัฒนาระบบ ดาวน์โหลด/อัปโหลดไฟล์ผ่าน FTP บน API Node.js',
-          'พัฒนาระบบสำหรับอ่านไฟล์จากรูปแบบ CSV, TXT, และ Excel\nและจัดเก็บข้อมูลในฐานข้อมูล',
+          'พัฒนาระบบ ดาวน์โหลด/อัปโหลดไฟล์ผ่าน FTP ',
+          'พัฒนาระบบสำหรับอ่านไฟล์จากรูปแบบ CSV, TXT, Excel และจัดเก็บข้อมูลในฐานข้อมูล',
           'พัฒนาระบบสำหรับการส่งข้อมูล ผ่าน Email / Line',
           'พัฒนาระบบ Webservice สำหรับการส่งข้อมูลระหว่างบริษัทประกัน',
-          'ตรวจสอบ source code ภายในทีม ก่อนนำขึ้น Production',
+          'ตรวจสอบ source code ภายในทีมก่อนนำขึ้น Production',
           'พัฒนาระบบด้วย .Net C#, RestFull API with Node js , HTML , js, css , ajax'
         ]
       },
@@ -149,18 +153,20 @@ const dataTH: ResumeData = {
         year: 'กุมภาพันธ์ 2025 - ปัจจุบัน',
         role: 'Mid.Developer',
         description: [
-          `งาน Development (Nodejs/typescript)
+          `งาน Development
             - ออกแบบฐานข้อมูล (PostgreSQL) เชื่อมต่อแบบ Entity TypeORM
-            - สร้างและออกแบบฟังก์ชั่นสำหรับการ Generate Data
-            - ทำ Document อธิบาย Endpoint API in Postman
+            - ปรับปรุงและพัฒนา API สำหรับบันทึกข้อมูล
             - Unit Test ด้วย Jest
+            - พัฒนาระบบฝั่ง Backend ด้วย Node.js (TypeScript)
           `,
-          `งาน Enhances (.Net C#)
+          `งาน Enhances
             - ตรวจสอบปัญหาและแก้ไขระบบ
             - พัฒนา Service การเชื่อมต่อ API
             - ปรับปรุง Function SQL-Store / Function SQL-View (MS SQL)
+            - พัฒนารายงานแบบ RDLC
             - จัดทำเอกสารสรุปการทำงานของระบบ
-          `,
+            - พัฒนาระบบด้วย .NET C# (mvc/web form/web api) , mssql
+          `
         ]
         
       },
