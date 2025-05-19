@@ -150,14 +150,14 @@ const About: React.FC = () => {
                         <li key={index2} className=""><span>{item2}</span></li>
                       ))} */}
                       {item.description.map((item2, index2) => (
-                        <li key={index2} className="">
+                        <p key={index2} className="">
                           {item2.split('\n').map((line, i) => (
                             <span key={i}>
                               {line}
                               {i !== item2.split('\n').length - 1 && <br />}
                             </span>
                           ))}
-                        </li>
+                        </p>
                       ))}
                     </div>
                     </>

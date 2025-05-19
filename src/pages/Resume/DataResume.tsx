@@ -59,17 +59,18 @@ const dataEN: ResumeData = {
         year: 'Jun 2021 - Jan 2025',
         role: 'Programmer',
         description: [
-          'Fix and solve system problems',
-          'Developed systems based on assigned tasks and requirements.',
-          'Create Program spec and Unit test',
-          'Supported team members.',
-          'Learn and Research new technologies to improve company systems.',
-          'Develop systems to upload and download files FTP ',
-          'Develop systems to read CSV, TXT, and Excel files and save the data in a database',
-          'Develop systems to send data via Email or Line',
-          'Develop Webservice between insurance companies.',
-          'Review source code',
-          'Develop systems using .NET C#, RESTful APIs with Node.js, HTML, JavaScript, CSS, and AJAX.',
+          `- Fix and solve system problems
+          - Developed systems based on assigned tasks and requirements.
+          - Create Program spec and Unit test
+          - Supported team members.
+          - Learn and Research new technologies to improve company systems.
+          - Develop systems to upload and download files FTP 
+          - Develop systems to read CSV, TXT, and Excel files and save the data in a database
+          - Develop systems to send data via Email or Line
+          - Develop Webservice between insurance companies.
+          - Review source code',
+          - Develop systems using .NET C#, RESTful APIs with Node.js, HTML, JavaScript, CSS, and AJAX.
+          `
         ]
       },
       {
@@ -101,7 +102,7 @@ const dataEN: ResumeData = {
       {ic:'faEnvelope', type: 'email', value: 'noon.supavadee@gmail.com'},
       {ic:'faHouse', type: 'home', value: 'Lumpini Ville Pattanakarn - New Phetchaburi'},
       {ic:'faGithub', type: 'git', value: 'https://github.com/Nsnoonz'},
-      {ic:'faGlobe', type: 'website', value: 'http://www.nsnoonz.com'},
+      {ic:'faGlobe', type: 'website', value: 'https://nsnoonz-react.vercel.app'},
     ]
   },
   education: {
@@ -134,17 +135,17 @@ const dataTH: ResumeData = {
         year: 'มิถุนายน 2021 - มกราคม 2025',
         role: 'Programmer',
         description: [
-          'ตรวจสอบปัญหาและแก้ไขระบบ', 
-          'ออกแบบฐานข้อมูล',
-          'ออกแบบและพัฒนาระบบที่ได้รับมอบหมายตาม\nพร้อมทั้งจัดทำเอกสาร Program spec และ Unit test',
-          'สนับสนุนเพื่อนร่วมทีม จัดทำเอกสารประกอบการพัฒนาระบบ',
-          'ศึกษาและค้นคว้า เทคโนโลยีต่างๆ เพื่อนำมาปรับใช้กับระบบของบริษัท',
-          'พัฒนาระบบ ดาวน์โหลด/อัปโหลดไฟล์ผ่าน FTP ',
-          'พัฒนาระบบสำหรับอ่านไฟล์จากรูปแบบ CSV, TXT, Excel และจัดเก็บข้อมูลในฐานข้อมูล',
-          'พัฒนาระบบสำหรับการส่งข้อมูล ผ่าน Email / Line',
-          'พัฒนาระบบ Webservice สำหรับการส่งข้อมูลระหว่างบริษัทประกัน',
-          'ตรวจสอบ source code ภายในทีมก่อนนำขึ้น Production',
-          'พัฒนาระบบด้วย .Net C#, RestFull API with Node js , HTML , js, css , ajax'
+          `- ตรวจสอบปัญหาและแก้ไขระบบ
+          -ออกแบบฐานข้อมูล
+          -ออกแบบและพัฒนาระบบที่ได้รับมอบหมายตาม\nพร้อมทั้งจัดทำเอกสาร Program spec และ Unit test
+          -สนับสนุนเพื่อนร่วมทีม จัดทำเอกสารประกอบการพัฒนาระบบ
+          -ศึกษาและค้นคว้า เทคโนโลยีต่างๆ เพื่อนำมาปรับใช้กับระบบของบริษัท
+          -พัฒนาระบบ ดาวน์โหลด/อัปโหลดไฟล์ผ่าน FTP 
+          -พัฒนาระบบสำหรับอ่านไฟล์จากรูปแบบ CSV, TXT, Excel และจัดเก็บข้อมูลในฐานข้อมูล
+          -พัฒนาระบบสำหรับการส่งข้อมูล ผ่าน Email / Line
+          -พัฒนาระบบ Webservice สำหรับการส่งข้อมูลระหว่างบริษัทประกัน
+          -ตรวจสอบ source code ภายในทีมก่อนนำขึ้น Production
+          -พัฒนาระบบด้วย .Net C#, RestFull API with Node js , HTML , js, css , ajax `
         ]
       },
       {
