@@ -69,7 +69,7 @@ const dataEN: ResumeData = {
           - Develop systems to send data via Email or Line
           - Develop Webservice between insurance companies.
           - Review source code',
-          - Develop systems using .NET C#, RESTful APIs with Node.js, HTML, JavaScript, CSS, and AJAX.
+          - Develop systems using ASP.NET, RESTful APIs with Node.js, HTML, JavaScript, CSS, and AJAX.
           `
         ]
       },
@@ -179,7 +179,7 @@ const dataTH: ResumeData = {
       { ic:'faEnvelope', type: 'email', value: 'noon.supavadee@gmail.com'},
       { ic:'faHouse', type: 'home', value: 'ลุมพินี วิลล์ พัฒนาการ - เพชรบุรีตัดใหม่'},
       { ic:'faGithub', type: 'git', value: 'https://github.com/Nsnoonz'},
-      { ic:'faGlobe', type: 'website', value: 'http://www.nsnoonz.com'},
+      { ic:'faGlobe', type: 'website', value: 'https://nsnoonz-react.vercel.app'},
     ]
   },
   education: {
